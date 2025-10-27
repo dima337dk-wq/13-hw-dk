@@ -1,7 +1,6 @@
 import {test, expect, request, APIRequestContext} from '@playwright/test';
 import {UserDTO} from "./DTO/UserDTO";
 
-
 let baseURLWithEndpoint: string = 'http://localhost:3000/users';
 
 test.describe('User management API', () => {
