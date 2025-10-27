@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 import {UserDTO} from "./DTO/UserDTO";
 
-let baseURLWithEndpoint: string = 'http://localhost:3000/users';
+const baseURLWithEndpoint: string = 'http://localhost:3000/users';
 
 test.describe('User management API', () => {
 
