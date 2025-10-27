@@ -66,7 +66,7 @@ router.delete('/:id', (req: Request, res: Response) => {
     if (userIndex !== -1) {
         const deletedUser = users.splice(userIndex, 1);
         console.log(`User with ID: ${req.params.id} deleted`);
-        res.json(deletedUser);
+        res.json(deletedUser[0]);
     } else {
         console.log(`User with ID: ${req.params.id} not found`);
         res.status(404).json({ message: 'User not found' });
