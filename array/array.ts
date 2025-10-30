@@ -57,3 +57,55 @@ const arr4: number[] = [3, 5, 7];
 for (let i = arr4.length - 1; i >= 0; i--) {
     console.log(arr4[i])
 }
+
+// ТИПОВЫЕ ЗАДАЧИ С СОБЕСЕДОВАНИЙ, array 1
+
+const arraySecondTask: number[] = [3, 5, 7, 8, 22, 4, 9];
+
+let numST = arraySecondTask[0]
+
+for (let i = 0; i < arraySecondTask.length; i++) {
+    if (numST < arraySecondTask[i]) {
+        numST = arraySecondTask[i]
+    }
+}
+console.log(numST)
+
+// 2
+
+const arraySecondTask2: number[] = [3, 5, 7, 8, 22, 4, 9];
+
+let numST2 = arraySecondTask2[0]
+
+for (let i = 0; i < arraySecondTask2.length; i++) {
+    if (numST2 > arraySecondTask2[i]) {
+        numST2 = arraySecondTask2[i]
+    }
+}
+console.log(numST2)
+
+// 3
+
+const arraySecondTask3: number[] = [3, 5, 7, 8, 22, 4, 9];
+
+let numST3 = 0
+
+for (let i = 0; i < arraySecondTask3.length; i++) {
+    if (arraySecondTask3[i] % 2 === 0) {
+        numST3 += 1
+    }
+}
+console.log(numST3)
+
+// 4
+
+const arraySecondTask4: number[] = [3, -5, 7, -8, 22, -4, 9];
+
+let arrayST4:number [] = []
+
+for (let i = 0; i < arraySecondTask4.length; i++) {
+    if (arraySecondTask4[i] > 0) {
+        arrayST4.push(arraySecondTask4[i])
+    }
+}
+console.log(arrayST4)
